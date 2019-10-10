@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-demos/ui/controls/card": ["libs/ui/controls/card/src/index.ts"],
+      "@nx-demos/shared/abstractions": [
+        "libs/shared/abstractions/src/index.ts"
+      ],
+      "@nx-demos/shared/services": ["libs/shared/services/src/index.ts"],
+      "@nx-demos/ui/controls/map-widget": [
+        "libs/ui/controls/map-widget/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,15 @@
+<div class=card-container>
+    <nx-demos-card-header [title]="headerText"></nx-demos-card-header>
+    <nx-demos-card-body *ngIf="!loading" [contentText]="contentText" [devices]="deviceResults">
+
+    </nx-demos-card-body>
+    <div *ngIf="loading" style="display: block; margin: auto" class="lds-ripple">
+        <div></div>
+        <div></div>
+    </div>
+    <div style="display: flex; justify-content: space-evenly; width: 100%">
+        <button mat-raised-button color="primary" (click)="getData_async()">Do api call</button>
+        <button mat-raised-button color="primary" (click)="changeText()">Change text</button>
+        <button mat-raised-button color="primary" (click)="changeText()">Look, Im dynamic</button>
+    </div>
+</div>

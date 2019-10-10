@@ -1,0 +1,28 @@
+<!-- <h4 style="text-align: center">{{contentText || 'Default body text'}}</h4> -->
+<!-- <mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Expansion title
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <p>{{contentText || 'Default body text'}}</p>
+</mat-expansion-panel> -->
+<div class="device-list">
+    <mat-expansion-panel *ngFor="let device of devices">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{device.deviceName}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>v{{device.verions || '1.0.0'}} Release {{device.realeaseDate}}</p>
+      </mat-expansion-panel>
+</div>
+
+<!-- <mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      This is the expansion title
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <p>{{contentText || 'Default body text'}}</p>
+</mat-expansion-panel> -->

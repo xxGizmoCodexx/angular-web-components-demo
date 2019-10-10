@@ -1,0 +1,42 @@
+{
+  "npmScope": "nx-demos",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "ui-controls-card": {
+      "tags": []
+    },
+    "nx-controls-demo-e2e": {
+      "tags": []
+    },
+    "nx-controls-demo": {
+      "tags": []
+    },
+    "nx-element-container-e2e": {
+      "tags": []
+    },
+    "nx-element-container": {
+      "tags": []
+    },
+    "nx-element-container-ivy-e2e": {
+      "tags": []
+    },
+    "nx-element-container-ivy": {
+      "tags": []
+    },
+    "shared-abstractions": {
+      "tags": []
+    },
+    "shared-services": {
+      "tags": []
+    },
+    "ui-controls-map-widget": {
+      "tags": []
+    }
+  }
+}
